@@ -10,21 +10,28 @@ class Person {
   constructor(firstName, middleName, lastName) {
     this.firstName = firstName;
     this.middleName = middleName;
-    this.lastName = lastName
-  }
-  fullName() {
-    return console.log(`${this.firstName} ${this.middleName} ${this.lastName}`)
-  }
+    this.lastName = lastName 
 }
-let person1 = new Person('patrick', 'george', 'smith')
+}
+let person1 = new Person('Ben', 'Marcus', 'Smith')
+let person2 = new Person('Lisa', 'Marie', 'Jimenez')
 
-
+console.log(person1.firstName)
 
 ```
 
 b. Write a method in `Person` called `fullName` that will return a formatted string of an instance's full name. Call this method on both the instances you created in part a.
 
-
+class Person {
+  constructor(firstName, middleName, lastName) {
+    this.firstName = firstName;
+    this.middleName = middleName;
+    this.lastName = lastName 
+}
+  fullName() {
+    return (`${this.firstName} ${this.middleName} ${this.lastName}`)
+  }
+}
 ## Question 2
 
 a. Create a class called `Book` that has properties `title`, `author` and `rating`. Create some instances of `Book`.
