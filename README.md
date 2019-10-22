@@ -39,6 +39,7 @@ class Person {
 
 a. Create a class called `Book` that has properties `title`, `author` and `rating`. Create some instances of `Book`.
 
+```
 class Book {
   constructor(title, author, rating){
     this.title = title;
@@ -65,11 +66,11 @@ class Book {
     }
   }
 
-
+```
 ## Question 3
 
 a. Create a `Dog` class with four properties: `name (string), breed (string), mood (string), and hungry (boolean)`.
-
+```
 class Dog {
   constructor(name,breed, mood, hungry){
     this.name = name;
@@ -80,9 +81,10 @@ class Dog {
   }
 }
 
-
+```
 b. Add a method called `playFetch`. It should set the dog's `hungry` property to `true`, set its mood property to `playful`, and log "Ruff!"
 
+```
 class Dog {
   constructor(name,breed, mood, hungry){
     this.name = name;
@@ -97,8 +99,9 @@ class Dog {
     }
   }
 
-
+```
 c. Add a method called `feed`. If the dog is hungry, it should set `hungry` to `false` and print "Woof!" If the dog is not hungry, it should log "The dog doesn't look hungry"
+```
 class Dog {
   constructor(name,breed, mood, hungry){
     this.name = name;
@@ -121,12 +124,12 @@ class Dog {
       }
     }
   }
-
+```
 
 
 
 d. Add a method called `toString` that returns a description of the dog:
-
+```
 constructor(name,breed, mood, hungry){
     this.name = name;
     this.breed = breed;
@@ -152,7 +155,7 @@ constructor(name,breed, mood, hungry){
     }
   }
 
-
+```
 ## Question 4
 
 There are three common scales that are used to measure temperature: Celsius, Fahrenheit, and Kelvin:
@@ -162,14 +165,14 @@ F = 1.8 * C + 32
 K = C + 273
 
 a. Make an object called `freezingPoint` that has three properties: `celsius`, `fahrenheit`, and `kelvin`. Give them all values equal to the freezing point of water.
-
+```
 let freezingPoint = {
   celsius: 0,
   fahrenheit: 32,
   kelvin: 273.2
 }
 
-
+```
 b. Make a class called `Celsius` that has one property: `celsius`, and two methods `getFahrenheitTemp`, and `getKelvinTemp`.
 
 
@@ -232,6 +235,18 @@ Ex: "Borat came out in 2006. It was an odd film starring Sacha Baron Cohen as a 
 
 Write a class Vector that represents a vector in two-dimensional space.
 It takes two number arguments: `x` and `y` parameters, which it should be saved to properties of the same name.
+
+```
+
+class vector {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+  plus()
+
+```
+
 
 Give the Vector prototype two methods, `plus` and `minus`, that take another vector as an argument and
 returns a new vector that has the sum or difference of the two vectors’ (the one in `this` and the parameter) x and y values.
