@@ -173,7 +173,7 @@ let freezingPoint = {
 b. Make a class called `Celsius` that has one property: `celsius`, and two methods `getFahrenheitTemp`, and `getKelvinTemp`.
 
 
-
+```
 class Celsius {
   constructor(celsius){
     this.celsius = celsius
@@ -190,7 +190,8 @@ class Celsius {
   }
   }
 
-```js
+```
+```
 let outsideTempt = new Celsius(10.0)
 outsideTempt.celsius //returns 10.0
 outsideTempt.getKelvinTemp() //returns 283.0
@@ -202,7 +203,26 @@ c. Give `Celsius` a method called `isBelowFreezing` that returns a `Bool` (true 
 ## Question 5
 
 a. Create a class called `Movie` that has properties for `name`, `year`, `genre`, `cast`, and `description`. Create an instance of your `Movie`
+```
+class Movie{
+  constructor(name, year, genre, cast, description){
+    this.name = name;
+    this.year = year;
+    this.genre = genre;
+    this.cast = cast;
+    this.description = description
+  }
+  blurb(){
+    return (`${this.name} came out in ${this.year}. It is a ${this.genre} film starring ${this.cast}. The description of the movie : ${this.description}`)
+  }
+}
 
+let movie1 = new Movie('Soylent green', 1973, 'thriller',['Charlton Heston','Leigh Taylor-Young','Edward G. Robinson']), 'dystopian thriller film')
+
+let movie2 = new Movie('Training Day', 2001, 'thriller',['	
+Denzel Washington','Ethan Hawke','Cop thiller'])
+
+```
 b. Create an method inside `Movie` called `blurb` that returns a formatted string describing the movie.
 
 Ex: "Borat came out in 2006. It was an odd film starring Sacha Baron Cohen as a man named Borat who was visiting America from Kazakhstan."
