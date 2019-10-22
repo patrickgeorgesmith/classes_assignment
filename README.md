@@ -176,6 +176,7 @@ let freezingPoint = {
 ```
 b. Make a class called `Celsius` that has one property: `celsius`, and two methods `getFahrenheitTemp`, and `getKelvinTemp`.
 
+c. Give `Celsius` a method called `isBelowFreezing` that returns a `Bool` (true if the temperature is below freezing).
 
 ```
 class Celsius {
@@ -194,19 +195,19 @@ class Celsius {
   }
   }
 
-```
-```
 let outsideTempt = new Celsius(10.0)
 outsideTempt.celsius //returns 10.0
 outsideTempt.getKelvinTemp() //returns 283.0
 outsideTempt.getFahrenheitTemp() //returns 50.0
+
 ```
 
-c. Give `Celsius` a method called `isBelowFreezing` that returns a `Bool` (true if the temperature is below freezing).
 
 ## Question 5
 
 a. Create a class called `Movie` that has properties for `name`, `year`, `genre`, `cast`, and `description`. Create an instance of your `Movie`
+b. Create an method inside `Movie` called `blurb` that returns a formatted string describing the movie.
+
 ```
 class Movie{
   constructor(name, year, genre, cast, description){
@@ -227,9 +228,7 @@ let movie2 = new Movie('Training Day', 2001, 'thriller',['
 Denzel Washington','Ethan Hawke','Cop thiller'])
 
 ```
-b. Create an method inside `Movie` called `blurb` that returns a formatted string describing the movie.
 
-Ex: "Borat came out in 2006. It was an odd film starring Sacha Baron Cohen as a man named Borat who was visiting America from Kazakhstan."
 
 
 ## Question 6
