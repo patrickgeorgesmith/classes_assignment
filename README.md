@@ -55,6 +55,7 @@ let secondBook = new Book('The subtle art of not giving a F), 'Mark Manson', 4)
 
 b. Add a method to `Book` called `isGood` that returns `true` if its rating is greater than or equal to 7
 
+```
 class Book {
   constructor(title, author, rating){
     this.title = title;
