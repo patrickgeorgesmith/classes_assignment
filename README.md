@@ -239,39 +239,60 @@ Denzel Washington','Ethan Hawke','Cop thiller'])
 
 Write a class Vector that represents a vector in two-dimensional space.
 It takes two number arguments: `x` and `y` parameters, which it should be saved to properties of the same name.
-
 ```
-
-class vector {
-  constructor(x, y) {
+class Vector{
+  constructor(x, y){
     this.x = x;
     this.y = y;
   }
-  plus()
-
 ```
-
-
 Give the Vector prototype two methods, `plus` and `minus`, that take another vector as an argument and
 returns a new vector that has the sum or difference of the two vectors’ (the one in `this` and the parameter) x and y values.
+```
+class Vector{
+  constructor(x, y){
+    this.x = x;
+    this.y = y;
+  }
+  plus(v){
+    return console.log(`${this.x + v.x}, ${this.y + v.y}`)
+  }
+  minus(v){
+    return console.log(`${this.y - v.y}, ${this.y - v.y}`)
+  }
+
+```
 
 Add a method `getLength` to the prototype that computes the length of the vector ;
 that is, the distance of the point (x, y) from the origin (0, 0).(a^2 + b^2 = c^2)
 
 [Vectors at mathisfun.com](https://www.mathsisfun.com/algebra/vectors.html)
 
-```js
-var v1 = new Vector(1, 2)
-var v2 = new Vector(2, 3)
-console.log(v1.plus(v2));
-// => Vector {x: 3, y: 5}
-console.log(v1.minus(v2));
-// => Vector {x: -1, y: -1}
-
-var v3 = new Vector(3, 4)
-console.log(v3.getLength());
-// => 5
 ```
+
+class Vector{
+  constructor(x, y){
+    this.x = x;
+    this.y = y;
+  }
+  plus(v){
+    return console.log(`${this.x + v.x}, ${this.y + v.y}`)
+  }
+  minus(v){
+    return console.log(`${this.y - v.y}, ${this.y - v.y}`)
+  }
+  getLength(){
+    let a2 = Math.pow(this.x, 2)
+    let b2 = Math.pow(this.y, 2)
+    let c2 = Math.sqrt(a2 + b2)
+    return console.log(Math.floor(c2))
+  }
+}
+
+```
+
+
+
 ## Question 7
 
 a. Write a class called `Cylinder` that has properties `radius` and `height`.  Create an instance of a Cylinder.
@@ -279,6 +300,8 @@ a. Write a class called `Cylinder` that has properties `radius` and `height`.  C
 b. Add an instance method `getVolume` that returns the [volume](https://www.mathopenref.com/cylindervolume.html)
 
 c. Add an instance method `getSurfaceArea` that returns the [surface area](https://www.mathopenref.com/cylinderareamain.html)
+
+
 
 ## Question 8
 
@@ -298,6 +321,8 @@ b. Make a class called `Bike` with properties `gears` and `hasBell`.  Create an 
 
 c. Give each class a static method called `numberOfWheels` that returns the number of wheels (2 for bikes, 4 for cars).  Why does it make sense for this to be a static method instead of an instance method?
 
+
+
 ## Question 10
 
 a. Make a class called `Vehicle` with properties `color` and `name`.  Give it a method called `makeSound` which logs "WHHOOSSSH" to the console
@@ -307,3 +332,4 @@ b. Modify your `Car` and `Bike` classes from Question 7 to extend the `Vehicle` 
 c. Create a new `Bike` instance that has a `color` of "green" and `name` "Bikey McBikeface"
 
 d. Create a new `Car` instance that has a `color` of "red" and `name` "Carry McCarface"
+
