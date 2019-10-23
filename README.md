@@ -266,7 +266,6 @@ class Vector{
 Add a method `getLength` to the prototype that computes the length of the vector ;
 that is, the distance of the point (x, y) from the origin (0, 0).(a^2 + b^2 = c^2)
 
-[Vectors at mathisfun.com](https://www.mathsisfun.com/algebra/vectors.html)
 
 ```
 
